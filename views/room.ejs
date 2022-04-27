@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MyPlace</title>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/room.js"></script>
+		<link rel="stylesheet" href="/room.css">
+	</head>
+	<body>
+		<div id="canvas"></div>
+		<%- `<script> init("${id}") </script>` %>
+	</body>
+</html>

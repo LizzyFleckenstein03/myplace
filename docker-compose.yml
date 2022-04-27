@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+ web:
+   build: .
+   ports:
+     - "23430:23430"
+   environment:
+     - HCAPTCHA_SITE_KEY=10000000-ffff-ffff-ffff-000000000001
+     - HCAPTCHA_SECRET_KEY=0x0000000000000000000000000000000000000000
+   links:
+     - database
+   depends_on:
+     - database
+ database:
+   image: mongo:latest
+   ports:
+     - "27017:27017"
+   volumes:
+     - ./data:/data/db

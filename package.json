@@ -1,0 +1,31 @@
+{
+  "name": "myplace",
+  "version": "1.0.0",
+  "description": "r/place clone",
+  "main": "init.js",
+  "scripts": {
+    "start": "node init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasFleckenstein03/myplace.git"
+  },
+  "author": "EliasFleckenstein03",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/EliasFleckenstein03/myplace/issues"
+  },
+  "homepage": "https://github.com/EliasFleckenstein03/myplace#readme",
+  "dependencies": {
+    "color-parse": "^1.4.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "express-hcaptcha": "^0.0.3",
+    "http-errors": "^2.0.0",
+    "mongodb": "^4.5.0",
+    "morgan": "^1.10.0",
+    "qrcode": "^1.5.0",
+    "socket.io": "^4.5.0"
+  }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MyPlace</title>
+		<script src="qrcode.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1>Room successfully created</h1>
+			<%- `<a href="${link}">${link}</a>` %><br>
+			<canvas id="qrcode"></canvas>
+		</center>
+		<%- `<script> QRCode.toCanvas(document.getElementById("qrcode"), "${link}") </script>` %>
+	</body>
+</html>

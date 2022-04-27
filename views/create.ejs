@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script defer src="init.js"></script>
+		<meta charset="utf-8">
+		<title>MyPlace</title>
+		<script src="https://hcaptcha.com/1/api.js" async defer></script>
+	</head>
+	<body>
+		<center>
+			<h1>Create New Room</h1>
+			<fieldset>
+				<legend>Room properties</legend>
+				<form action="/create" method="post">
+					<label for="width" >Width </label><%- `<input type="number" id="width"  name="width"  min="1" max="${max_size}">` %><br><br>
+					<label for="height">Height</label><%- `<input type="number" id="height" name="height" min="1" max="${max_size}">` %><br><br>
+					<label for="timeout">Timeout</label><input type="number" name="timeout" min="0"><br><br>
+					<%- `<div class="h-captcha" data-sitekey="${hcaptcha_site_key}"></div>` %><br><br>
+					<button type="submit">Create Room</button><br><br>
+				</form>
+			</fieldset>
+		</center>
+	</body>
+</html>
